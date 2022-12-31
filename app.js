@@ -26,9 +26,14 @@ function mostrarMensaje(value){
         btnDelete.style.color = 'red';
         btnDelete.style.fontSize = '25px';
         mensaje.appendChild(btnDelete);
+        addListener(mensaje)
         containerMessage.appendChild(mensaje); 
     });
     eliminarMensaje()
+}
+
+function addListener(val){
+    console.log(val)
 }
 
 function mensajeInicio(){
